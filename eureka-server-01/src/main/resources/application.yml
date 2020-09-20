@@ -15,4 +15,11 @@ eureka:
   server:
     # 测试时关闭自我保护机制，保证不可用服务及时踢出
     enableSelfPreservation: false
+    waitTimeInMsWhenSyncEmpty: 0
+    peerEurekaNodesUpdateIntervalMs: 10000000
+
+logging:
+  level:
+    com.springframework.cloud: debug
+    com.netflix: debug
 
